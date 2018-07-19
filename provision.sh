@@ -16,6 +16,7 @@ sudo chmod +x /etc/profile.d/java.sh
 source /etc/profile.d/java.sh
 ###########Nginx setup############
 yum -y install nginx
+yum -y install java
 cat <<EOF > /etc/nginx/conf.d/server.conf
 server {
         listen       80 default_server;
