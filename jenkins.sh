@@ -2,7 +2,7 @@
 echo "Downloading files"
 
 rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-yum install -y gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl-devel git jenkins java-1.8.0-openjdk
+yum install -y gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl-devel git java-1.8.0-openjdk
 wget -nv https://nginx.org/download/nginx-1.14.0.tar.gz
 wget http://www.openssl.org/source/openssl-1.0.2o.tar.gz
 
@@ -46,3 +46,15 @@ rm -rf /home/vagrant/nginx-1.14.0
 rm -rf /home/vagrant/nginx-1.14.0.tar.gz
 rm -rf /home/vagrant/openssl-1.0.2o.tar.gz
 rm -rf /home/vagrant/openssl-1.0.2o
+
+echo "Installing jenkins..."
+useradd jenkins
+sudo mkdir -p /opt/jenkins/{bin,master}
+sudo chown -R jenkins /opt/jenkins
+cp /vagrant/jenkins.service /etc/systemd/system/
+cd /opt/jenkins/bin
+wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+systemctl daemon-reload
+systemctl enable jenkins
+systemctl start jenkins
+
