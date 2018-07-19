@@ -1,5 +1,8 @@
 # git-tasks
 This is the project that deployes jenkins service for providing a CI/CD processes.
+Our project can be deployed by only Vagrant tool
+
+
 
 <dl>
   <dt>Developers:</dt>
