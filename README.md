@@ -1,6 +1,6 @@
 # git-tasks
-Jenkins installation project
-let's split it?
+Task 2 
+	- kuchynski
+	- maniukevich
+	- znak
 
-Darya: provision script (nginx configuration)
-Alexandr Patapniou: provision script + vagrant file
