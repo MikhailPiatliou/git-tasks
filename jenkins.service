@@ -5,9 +5,7 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=/opt/jenkins/bin
-Restart=always
 User=jenkins
-
 
 [Install]
 WantedBy=multi-user.target
