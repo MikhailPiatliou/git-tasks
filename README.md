@@ -2,7 +2,11 @@
 This is the project that deployes jenkins service for providing a CI/CD processes.
 Our project can be deployed by only Vagrant tool
 
-
+# Install and configure Nginx.
+1. Vagrant runs file provision.sh with follow steps;
+  1. automation install Nginx from yum repositories;
+  2. create config /etc/nginx/conf.d/jenkins.conf for availability by link http://jenkins.
+  3. download jenkins.war and implements it as service trought systemd
 
 <dl>
   <dt>Developers:</dt>
@@ -19,10 +23,5 @@ Our project can be deployed by only Vagrant tool
   </dd>
 </dl>
  
-# Install and configure Nginx.
-1. Run file provision.sh;
-  1. automation install Nginx from yum repositories;
-  2. create config /etc/nginx/conf.d/jenkins.conf for availability by link http://jenkins.
-  3. download jenkins.war and implements it as service trought systemd
 
 ![alt text](https://drive.google.com/open?id=0B2h4DxcUKi5TQ096R3ZLWVYtM0tuZERRVkc2enVGajFFNjV3 "concept")
