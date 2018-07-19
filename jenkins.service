@@ -1,8 +1,9 @@
 [Unit]
 Description=Jenkins
+After=network.target
 
 [Service]
-ExecStart=/usr/bin/java -DJENKINS_HOME=/opt/jenkins/master -DJENKINS_DIR=/opt/jenkins/bin -jar /opt/jenkins/bin/jenkins.war
+ExecStart=/usr/bin/java -DJENKINS_HOME=/opt/jenkins/master -DJENKINS_DIR=/opt/jenkins/bin -jar jenkins.war
 User=jenkins
 
 [Install]
