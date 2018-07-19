@@ -1,0 +1,12 @@
+[Unit]
+Description=Jenkins war file running script
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStartPre=/usr/bin/java -jar /vagrant/jenkins.war -t
+ExecStart=/usr/bin/java -jar /vagrant/jenkins.war
+
+[Install]
+WantedBy=multi-user.target
+
