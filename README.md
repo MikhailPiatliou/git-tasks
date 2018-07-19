@@ -14,7 +14,7 @@ There are 2 students working on it Hleb Viniarski and Oleg Monko.
 ### Project features:
 
 - Jenkins installed to folder /opt/jenkins/
-- Jenkins runs under ‘jenkins’ user and started from systemd script as service
+- Jenkins runs under ‘jenkins’ user and started from systemd script as service.
 - JENKINS_HOME=/opt/jenkins/master
 - JENKINS_DIR=/opt/jenkins/bin
 - Jenkins closed by Nginx and available by link http://jenkins
