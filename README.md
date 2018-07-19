@@ -8,4 +8,11 @@ Project consists:
 - jenkins.sh - provisioning script for installing Jenkins.
 - nginx.conf - config file for nginx.
 - jenkins.service - systemd script for jenkins.
+
+Project features:
+- Jenkins installed to folder /opt/jenkins/
+- Jenkins runs under ‘jenkins’ user and started from systemd script as service
+- JENKINS_HOME=/opt/jenkins/master
+- JENKINS_DIR=/opt/jenkins/bin
+- Jenkins closed by Nginx and available by link http://jenkins
  
