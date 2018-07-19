@@ -25,7 +25,7 @@ WantedBy=multi-user.target
 EOF
 
 sudo chown -R jenkins:jenkins $path_jenkins
-
+# start a jenkins service
 systemctl daemon-reload
 sudo systemctl start jenkins
 
@@ -53,7 +53,7 @@ server {
     }
 }
 EOF
-
+# start nginx service
 systemctl enable nginx
 systemctl start nginx
 
