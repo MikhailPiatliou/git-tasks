@@ -18,6 +18,8 @@ Our project can be deployed by only Vagrant tool
         - Changing READ.me file
   </dd>
 </dl>
+
+<H3>Concept:</H3>
  
 # Install and configure Nginx.
 1. Run file provision.sh;
