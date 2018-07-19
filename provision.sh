@@ -21,12 +21,10 @@ Environment=JENKINS_DIR=$JENKINS_DIR
 [Install]
 WantedBy=multi-user.target
 EOF
-
 sudo chown -R jenkins:jenkins $path_jenkins
 # start a jenkins service
 systemctl daemon-reload
 sudo systemctl start jenkins
-
 #configure Nginx server for navigation to Jenkins without port
 cat  > /etc/nginx/conf.d/jenkins.conf <<EOF
 upstream jenkins {
