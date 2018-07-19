@@ -46,6 +46,3 @@ include /etc/nginx/conf.d/*.conf;
 }
 
 EOF
-
-cp /vagrant/jenkins.service /etc/systemd/system/
-
