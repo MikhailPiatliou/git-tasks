@@ -35,6 +35,6 @@ EOF
 
 
 
-
+wget -q  http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 cp /vagrant/jenkins.service /etc/systemd/system/
 
