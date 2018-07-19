@@ -4,7 +4,7 @@ Project result
 Configure ready for deployment vagrant file with scripts
 
 Project goal 
-Installation of Jenkins with Nginx as proxy
+Installation of Jenkins, use Nginx as proxy
 
 Project dreamteam:
 Darya: provision script (nginx configuration) + picture
