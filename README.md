@@ -8,7 +8,7 @@ Description=Jenkins Daemon
 [Service]
 ExecStart=/usr/bin/java -jar /opt/jenkins/bin/jenkins.war
 ExecStop=kill ps -ef | grep [j]enkins.war | awk '{ print $2 }'
-User=jenkins [*user*]
+User=jenkins 
 [Install]
 WantedBy=multi-user.target
 
