@@ -1,8 +1,10 @@
 [Unit]
-Description=Jenkins Daemon
+Description=Jenkins Service
+After=network.target
 
 [Service]
-ExecStart=/usr/bin/java -jar /opt/jenkins/bin/jenkins.war
+Type=simple
+ExecStart=/opt/jenkins/bin
 User=jenkins
 
 [Install]
