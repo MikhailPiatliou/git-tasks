@@ -22,4 +22,3 @@ of automated rolling out of Jenkins server
   d) JENKINS_DIR=/opt/jenkins/bin  ( <- .war is here)
   
   e) Closed by Nginx and available by link http://jenkins
- 
