@@ -10,3 +10,6 @@ Project dreamteam:
 Darya: provision script (nginx configuration)
 Constantine: systemd file with Jenkins daemon config, provision script
 Alexandr Patapniou: provision script + vagrant file
+
+
+I WAS HERE !!!!
