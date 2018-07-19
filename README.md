@@ -26,4 +26,4 @@ Our project can be deployed by only Vagrant tool
 <H3>Concept:</H3>
  
 
-![alt text](https://drive.google.com/file/d/0B2h4DxcUKi5TM0twWExKUDR1QmI3dHdvU28tb01NaG9NYjFj/view "concept")
+![alt text](https://drive.google.com/open?id=0B2h4DxcUKi5TM0twWExKUDR1QmI3dHdvU28tb01NaG9NYjFj "concept")
