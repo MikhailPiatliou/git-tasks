@@ -5,8 +5,8 @@ Task 2
 
 <p>Linux service - systemd</p>
 <ol>
-<li>Download jenkins.war</li>
-<li>Create service file /etc/systemd/system/jenkins.service<br>
+<li>1. Download jenkins.war</li>
+<li>2. Create service file /etc/systemd/system/jenkins.service<br>
 [Unit]<br>
 Description=Jenkins Daemon<br>
 [Service]<br>
