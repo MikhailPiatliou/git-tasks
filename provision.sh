@@ -46,3 +46,16 @@ include /etc/nginx/conf.d/*.conf;
 }
 
 EOF
+
+
+
+
+
+wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+cp /vagrant/jenkins.service /etc/systemd/system/
+
+
+#cp /vagrant/jenkins.service /etc/systemd/system/
+
+
+
