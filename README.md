@@ -1,7 +1,6 @@
 # git-tasks
 This is the project that deployes jenkins service for providing a CI/CD processes.
 
-
 <dl>
   <dt>Developers:</dt>
   <dd>1. Y. Sokal
@@ -17,3 +16,8 @@ This is the project that deployes jenkins service for providing a CI/CD processe
   </dd>
 </dl>
  
+# Install and configure Nginx.
+1. Run file provision.sh;
+  1. automation install Nginx from yum repositories;
+  2. create config /etc/nginx/conf.d/jenkins.conf for availability by link http://jenkins.
+  3. download jenkins.war and implements it as service trought systemd
