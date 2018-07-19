@@ -2,6 +2,7 @@
 # beta 0.1
 ###########Nginx setup############
 yum -y install nginx
+yum -y install java
 cat <<EOF > /etc/nginx/conf.d/server.conf
 server {
         listen       80 default_server;
@@ -35,6 +36,10 @@ EOF
 
 
 
+
 wget -q  http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 cp /vagrant/jenkins.service /etc/systemd/system/
+
+
+#cp /vagrant/jenkins.service /etc/systemd/system/
 
