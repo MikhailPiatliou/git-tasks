@@ -7,10 +7,13 @@ sudo yum localinstall jdk-8u*-linux-x64.rpm -y
 sudo touch /etc/profile.d/java.sh
 tee /etc/profile.d/java.sh << EOF
 #!/bin/bash
+JENKINS_HOME=/opt/jenkins/master
 JAVA_HOME=/usr/java/jdk1.8.0_131/
 PATH=$JAVA_HOME/bin:$PATHs
 export PATH JAVA_HOME
 export CLASSPATH=.
+export JENKINS_HOME
+
 EOF
 sudo chmod +x /etc/profile.d/java.sh
 source /etc/profile.d/java.sh
@@ -47,16 +50,9 @@ include /etc/nginx/conf.d/*.conf;
 }
 
 EOF
-
-
-
-
-
 wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 cp /vagrant/jenkins.service /etc/systemd/system/
-
-
-#cp /vagrant/jenkins.service /etc/systemd/system/
-
+mkdir -r /opt/jenkins/bin
+mv jenkins.war /opt/jenkins/bin/
 
 
