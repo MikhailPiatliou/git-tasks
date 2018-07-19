@@ -1,5 +1,4 @@
 #!/bin/sh
-
 #installing needed software
 yum -y --nogpgcheck install java mc net-tools nano screen pcre-devel zlib-devel;
 #adding jenkins user
