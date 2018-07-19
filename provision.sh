@@ -7,8 +7,6 @@ sudo mkdir -p  $path_jenkins
 sudo yum install mc net-tools vim java-1.8.0-openjdk-devel nginx -y
 sudo wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war -P $path_jenkins
 
-sudo user
-
 sudo cat > /etc/systemd/system/jenkins.service <<EOF
 [Unit]
 Description=Jenkins Daemon
