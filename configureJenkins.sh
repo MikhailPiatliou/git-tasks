@@ -2,7 +2,6 @@
 
 #installing needed software
 yum -y --nogpgcheck install java mc net-tools nano screen pcre-devel zlib-devel;
-
 #installing jenkins
 screen -t jenkins -dm bash -c '
 mkdir /home/vagrant/jenk;
@@ -11,7 +10,6 @@ wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/latest/jenkins.war;
 wall "Jenkins is installed.";
 java -jar ./jenkins.war;
 '
-
 #installing nginx
 screen -t "nginx" -dm bash -c 'mkdir /home/vagrant/nginx;
 cd $_;
