@@ -26,4 +26,4 @@ Our project can be deployed by only Vagrant tool
 <H3>Concept:</H3>
  
 
-![Diagram](https://drive.google.com/open?id=0B2h4DxcUKi5TM0twWExKUDR1QmI3dHdvU28tb01NaG9NYjFj "concept")
+![Diagram](https://github.com/MNT-Lab/git-tasks/blob/7e45b8b07a96dcf6415c54968ce5229f029da572/WP_20180719_16_47_59_Pro.jpg "concept")
