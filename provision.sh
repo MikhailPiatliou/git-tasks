@@ -4,7 +4,6 @@
 cd /usr/local/src/ && wget -q --no-cookies --no-check-certificate --header \
 "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm"
 sudo yum localinstall jdk-8u*-linux-x64.rpm -y
-#sudo rm -f /usr/local/src/jdk-8u*-linux-x64.rpm
 sudo touch /etc/profile.d/java.sh
 tee /etc/profile.d/java.sh << EOF
 #!/bin/bash
@@ -15,5 +14,38 @@ export CLASSPATH=.
 EOF
 sudo chmod +x /etc/profile.d/java.sh
 source /etc/profile.d/java.sh
+###########Nginx setup############
+yum -y install nginx
+cat <<EOF > /etc/nginx/conf.d/server.conf
+server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+
+        server_name  jenkins;
+        add_header backend_srv jenkins;
+        #charset koi8-r;
+location / {
+           proxy_pass http://192.168.15.2:8080;
+        }
+}
+
+EOF
+
+cat <<EOF > /etc/nginx/nginx.conf
+worker_processes  1;
+events {
+    worker_connections  1024;
+}
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout 65;
+include /etc/nginx/conf.d/*.conf;
+
+}
+
+EOF
+
 cp /vagrant/jenkins.service /etc/systemd/system/
 
