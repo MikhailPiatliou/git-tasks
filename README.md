@@ -1,5 +1,4 @@
 Linux service - systemd
-
 1. Download jenkins.war
 2. Create service file /etc/systemd/system/jenkins.service
 [Unit]
