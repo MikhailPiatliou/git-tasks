@@ -1,15 +1,13 @@
 # The diagram of our workflow.
 ![picture](img/Diagram.png)
 
-## Team members:
+## Team members: Aliaksandr Aranski, Yauheni Papkou
 
-Aliaksandr Aranski, Yauheni Papkou
-
-Project includes:
+# Project includes:
 1. Vagrant file for creating environment for Jenkins server.
 2. Provisioning script jenkins.sh script for installing and running jenkins.sh.
 
-Provisioning script:
+# Provisioning script:
 
 a) Jenkins installed to folder /opt/jenkins/
 
