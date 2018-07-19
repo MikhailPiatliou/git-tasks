@@ -8,7 +8,7 @@ There are 2 students working on it Hleb Viniarski and Oleg Monko.
 
 - Vagrantfile - file for creating virual machine.
 - jenkins.sh - provisioning script for installing Jenkins.
-- nginx.conf - config file for nginx.
+- nginx - folder for nginx config files. 
 - jenkins.service - systemd script for jenkins.
 
 ### Project features:
