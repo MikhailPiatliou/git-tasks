@@ -1,5 +1,4 @@
 Vagrant.configure("2") do |config|
-  
   config.vm.define "jenkins" do |jenkins|    
       jenkins.vm.box = "sbeliakou/centos-7.4-x86_64-minimal"
       jenkins.vm.hostname = "jenkins"
@@ -11,4 +10,4 @@ Vagrant.configure("2") do |config|
 	  vb.name = "jenkins"
 	  end
   end
- end
+end
