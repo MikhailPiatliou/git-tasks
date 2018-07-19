@@ -10,4 +10,3 @@ Linux service - systemd
     User=jenkins
     [Install]
     WantedBy=multi-user.target
-
