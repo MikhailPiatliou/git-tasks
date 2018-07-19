@@ -13,7 +13,6 @@ PATH=$JAVA_HOME/bin:$PATHs
 export PATH JAVA_HOME
 export CLASSPATH=.
 export JENKINS_HOME
-
 EOF
 sudo chmod +x /etc/profile.d/java.sh
 source /etc/profile.d/java.sh
@@ -29,7 +28,7 @@ server {
         add_header backend_srv jenkins;
         #charset koi8-r;
 location / {
-           proxy_pass http://192.168.15.2:8080;
+           proxy_pass http://192.168.100.200:8080;
         }
 }
 
