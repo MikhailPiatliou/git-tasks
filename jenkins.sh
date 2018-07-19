@@ -49,11 +49,11 @@ rm -rf /home/vagrant/openssl-1.0.2o
 
 echo "Installing jenkins..."
 useradd jenkins
-sudo mkdir -p /opt/jenkins/{bin,master}
-sudo chown -R jenkins /opt/jenkins
+mkdir -p /opt/jenkins/{bin,master}
 cp /vagrant/jenkins.service /etc/systemd/system/
 cd /opt/jenkins/bin
 wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+chown -R jenkins /opt/jenkins
 systemctl daemon-reload
 systemctl enable jenkins
 systemctl start jenkins
