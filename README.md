@@ -18,4 +18,5 @@ There are 2 students working on it Hleb Viniarski and Oleg Monko.
 - JENKINS_HOME=/opt/jenkins/master
 - JENKINS_DIR=/opt/jenkins/bin
 - Jenkins closed by Nginx and available by link http://jenkins
- 
+
+![Diagram](https://github.com/MNT-Lab/git-tasks/blob/project/hviniarski-omonko/diagram.jpg) 
